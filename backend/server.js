@@ -5,7 +5,8 @@ const rateLimit = require("express-rate-limit");
 const validator = require("validator");
 require("dotenv").config();
 
-const app = express();
+const app = express(); // ✅ <--- THIS must come before using app.*
+
 const PORT = process.env.PORT || 5000;
 
 // Rate Limiting: 50 requests per 15 minutes per IP
@@ -18,26 +19,27 @@ app.use(limiter);
 
 // CORS: Allow only your frontend domain
 app.use(cors({
-  origin: "https://your-frontend-domain.com",  // <-- Replace this with your deployed frontend URL
+  origin: "http://localhost:5173",  // ✅ use your Vite dev URL or production domain
   methods: ["POST"],
   allowedHeaders: ["Content-Type"]
 }));
 
-
 app.use(express.json());
 
+// ✅ API route must come after express setup
 app.post("/api/contact", async (req, res) => {
-  const { name, email, message } = req.body;
+  const { name, email, contact, message } = req.body;
 
-console.log("Received contact form submission:", req.body); //////////////
+  console.log("Received:", req.body)
 
-  // Input validation
   if (
+    validator.isEmpty(name || "") ||
+    validator.isEmpty(email || "") ||
+    validator.isEmpty(contact || "") ||
+    validator.isEmpty(message || "") ||
     !validator.isEmail(email) ||
-    validator.isEmpty(name) ||
-    validator.isEmpty(message)
+    !validator.isMobilePhone(contact, "any")
   ) {
-    console.log("Invalid input detected");  /////////////////
     return res.status(400).json({ message: "Invalid input." });
   }
 
@@ -49,19 +51,30 @@ console.log("Received contact form submission:", req.body); //////////////
         pass: process.env.EMAIL_PASS
       }
     });
-       console.log("Sending email via:", process.env.EMAIL_USER);///////////
+
+      console.log("Sending email from:", process.env.EMAIL_USER);
+
     await transporter.sendMail({
       from: `"HyperCargo Website Contact" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_USER,
       subject: "New Contact Form Message",
-      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+      text: `
+Name: ${name}
+Email: ${email}
+Contact: ${contact}
+
+Message:
+${message}
+      `
     });
-      console.log("Email sent successfully.");/////////////////
+
     res.status(200).json({ message: "Message sent successfully!" });
   } catch (err) {
-      console.error("Email error:", err); // Log full error
-  res.status(500).json({ message: "Error sending email.", error: err.message });
+    console.error("Email error:", err);
+    res.status(500).json({ message: "Error sending email.", error: err.message });
   }
 });
 
+// ✅ Start the server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
