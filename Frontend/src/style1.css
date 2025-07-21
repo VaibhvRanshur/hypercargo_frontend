@@ -13,7 +13,6 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #e9f5ff;
   color: #333;
-  /* user-select: none; */
 }
 
 main {
@@ -73,22 +72,31 @@ main {
 
 .background-img-text0 {
   font-weight: bold;
-  font-size: 3rem;
-  text-shadow: 1px 1px 3px #000;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px #000;
+  text-align: center;
+  margin-bottom: 0.2rem; 
+  line-height: 1.1;
 }
 
 .background-img-text1 {
   font-weight: bold;
   font-size: 2rem;
-  text-shadow: 1px 1px 3px #000;
+  text-shadow: 2px 2px 5px #000;
+  text-align: center;
+  margin-top: 0; 
+  line-height: 1.1;
 }
 
 .highlight0 {
   color: rgb(252, 240, 240);
+  font-size: 2rem;
+  padding: 0.5rem;
 }
 
 .highlight {
-  color: #045c99;
+  color: hsl(205, 95%, 31%);
+  font-size: 3rem;
 }
 
 .company-intro {
@@ -217,13 +225,13 @@ main {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  margin: 3rem auto; /* 👈 Center the card horizontally */
+  margin: 3rem auto; 
   padding: 1rem;
   background-color: #eef3f5;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 900px; /* 👈 Limit how wide the card gets */
-  width: 90%; /* 👈 Allow responsiveness on smaller screens */
+  max-width: 900px; 
+  width: 90%; 
 }
 
 

@@ -174,7 +174,7 @@ If you need it, we’ll find it and deliver it.</p>
 
       <ProductCard
         image="/images/chillypowder1.jpg"
-        title="Red cilly Dry / Powder"
+        title="Red Chilly ( Dry / Powder )"
         origin="Origin:"
         originDescription="Guntur & Byadgi"
         form="Varieties:"

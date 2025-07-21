@@ -26,8 +26,9 @@ export default function Header() {
 
       <nav className="tabs">
         <Link to="/" className="tab">Home</Link>
+         <Link to="/about" className="tab">About</Link>
         <Link to="/products" className="tab">Products</Link>
-        <Link to="/about" className="tab">About</Link>
+       
         <Link to="/contact" className="tab">Contact</Link>
       </nav>
     </div>
