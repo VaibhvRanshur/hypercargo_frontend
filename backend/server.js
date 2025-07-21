@@ -5,7 +5,7 @@ const rateLimit = require("express-rate-limit");
 const validator = require("validator");
 require("dotenv").config();
 
-const app = express(); // ✅ <--- THIS must come before using app.*
+const app = express(); 
 
 const PORT = process.env.PORT || 5000;
 
@@ -19,18 +19,16 @@ app.use(limiter);
 
 // CORS: Allow only your frontend domain
 app.use(cors({
-  origin: "http://localhost:5173",  // ✅ use your Vite dev URL or production domain
+  origin: "http://localhost:5173",  // use your Vite dev URL or production domain
   methods: ["POST"],
   allowedHeaders: ["Content-Type"]
 }));
 
 app.use(express.json());
 
-// ✅ API route must come after express setup
+// API route must come after express setup
 app.post("/api/contact", async (req, res) => {
   const { name, email, contact, message } = req.body;
-
-  console.log("Received:", req.body)
 
   if (
     validator.isEmpty(name || "") ||
@@ -51,8 +49,6 @@ app.post("/api/contact", async (req, res) => {
         pass: process.env.EMAIL_PASS
       }
     });
-
-      console.log("Sending email from:", process.env.EMAIL_USER);
 
     await transporter.sendMail({
       from: `"HyperCargo Website Contact" <${process.env.EMAIL_USER}>`,
