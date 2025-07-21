@@ -13,10 +13,10 @@ node_modules
 # Build output
 dist
 dist-ssr
-.vite/              # <-- Add this if using Vite
+.vite/               
 
 # Environment files
-.env                # <-- ADD this line
+.env                  
 .env.local
 .env.*.local
 
@@ -30,4 +30,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-

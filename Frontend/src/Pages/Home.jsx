@@ -21,9 +21,9 @@ const Home = () => (
       <p className='background-img-text0'> <span className='highlight0'>Welcome to</span> <span className="highlight">HyperCargo Overseas</span></p>
     <p className='background-img-text1'><span className='highlight0'>Your reliable partner in global trade.</span></p>
     </div>
-      <div  className='company-intro'>  
+      <div  className='company-intro-head'>  
         <h1>Company Introduction</h1>
-    <p className='company-intro1'>{`
+    <p className='company-intro-subhead'>{`
     At HyperCargo Overseas, we connect quality with global demand—exporting a wide range 
   of premium products to businesses worldwide. With fast, secure logistics, tailored 
   solutions, and a dedicated team by your side, we simplify international trade.Powered 

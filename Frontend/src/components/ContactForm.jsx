@@ -1,10 +1,12 @@
+// 
+
 import { useState } from "react";
-// import "./ContactForm.css"; // optional for styling
 
 function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    contact: "", // ✅ New field
     message: ""
   });
 
@@ -19,7 +21,7 @@ function ContactForm() {
     setStatus("Sending...");
 
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -29,7 +31,7 @@ function ContactForm() {
 
       if (response.ok) {
         setStatus("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", contact: "", message: "" });
       } else {
         setStatus("Failed to send message. Try again later.");
       }
@@ -54,6 +56,14 @@ function ContactForm() {
           type="email"
           placeholder="Your Email"
           value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="contact"
+          type="tel"
+          placeholder="Your Contact Number"
+          value={formData.contact}
           onChange={handleChange}
           required
         />

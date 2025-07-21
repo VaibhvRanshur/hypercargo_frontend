@@ -50,6 +50,7 @@ main {
 .tab {
   color: #1e88e5;
   font-weight: bold;
+  font-size: 1.1rem;
   user-select: none;
   text-decoration: none;
   border: none;
@@ -84,7 +85,7 @@ main {
   font-size: 2rem;
   text-shadow: 2px 2px 5px #000;
   text-align: center;
-  margin-top: 0; 
+  /* margin-top: 0;  */
   line-height: 1.1;
 }
 
@@ -99,17 +100,18 @@ main {
   font-size: 3rem;
 }
 
-.company-intro {
+.company-intro-head {
   padding: 1rem;
   margin: 2rem;
   text-align: center;
   color:  #3b92ce;
+  font-size:1.5rem;
 }
 
-.company-intro1 {
-  font-size: 1rem;
+.company-intro-subhead {
+  /* font-size: 1rem; */
   white-space: pre-wrap;
-  font-size: 1.1rem;
+  font-size:1;
   color:#0d4373;
 }
 
@@ -207,18 +209,16 @@ main {
 /* =============================
    Products Page
 ============================= */
-.products-heading{
-  text-align: center;
-  font-size: x- large;
-  color:#0d4373;
-}
+
 
 .products-Sub-heading {
   text-align: center;
-  color:#1e88e5;
+  color:#0d4373;
   margin-top: 4rem;
   max-width: 1000px;
-  font-size: larger;
+  font-size: 1.5rem;
+  white-space: pre-wrap;
+
 }
 
 .product-card {
@@ -295,7 +295,7 @@ main {
 
 .vision-paragraph {
   white-space: pre-wrap;
-  font-size: 1rem;
+  font-size: x-large;
   color: #003366;
   max-width: 800px;
   margin: auto;
