@@ -43,8 +43,8 @@ export default function Footer({ setActivePage }) {
        <p className='footer-para'><span className=' '>📞</span>+91 7447886846</p>
        <p className='footer-para' ><span className='footer-sym'>📞</span>+91 8263843059</p>
         <div className='footer-mail'>
-       <p><span className='footer-sym'>✉︎</span> hypercargooverseas@gmail.com</p>
-     </div>
+          <p className='footer-para'><span className='footer-sym'>✉︎</span> hypercargooverseas@gmail.com</p>
+        </div>
      </div>
     
     </div>

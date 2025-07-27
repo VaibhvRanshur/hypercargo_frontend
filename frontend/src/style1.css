@@ -199,6 +199,11 @@ main, .page, .header {
   margin-top: 4rem;
 }
 
+.footer-para:hover {
+  color: #0d4373;
+}
+
+
 .foot-address {
   display: flex;
   flex-direction: column;
