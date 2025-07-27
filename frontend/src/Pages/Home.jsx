@@ -4,11 +4,11 @@ import Background from '../image/background-img3.jpg';
 const Home = () => (
 
   <section className="page">
-    <div style={{
+    <div  style={{
      width: "100vw",
     height: "100vh",
     backgroundImage: `url(${Background})`,      
-    backgroundSize: "cover",
+    backgroundSize:"cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     display: "flex",
@@ -21,21 +21,22 @@ const Home = () => (
       <p className='background-img-text0'> <span className='highlight0'>Welcome to</span> <span className="highlight">HyperCargo Overseas</span></p>
     <p className='background-img-text1'><span className='highlight0'>Your reliable partner in global trade.</span></p>
     </div>
-      <div  className='company-intro-head'>  
-        <h1>Company Introduction</h1>
-    <p className='company-intro-subhead'>{`
+      <div className='company-intro'>
+        <h1  className='company-intro-head'>Company Introduction</h1>
+    <p className='company-intro-subhead'>
     At HyperCargo Overseas, we connect quality with global demand—exporting a wide range 
   of premium products to businesses worldwide. With fast, secure logistics, tailored 
   solutions, and a dedicated team by your side, we simplify international trade.Powered 
   by smart technology and end-to-end support, we make global shipping smooth, reliable, 
   and worry-free.
-    `}</p>
+    </p>
+    </div>
+
       <br />
      <div className="page-img">
-      <div className="img-box"><img src="/images/whyus1.png" alt="Home 1" /></div>
-      <div className="img-box"><img src="/images/ourservice1.png" alt="Home 2" /></div>
-      <div className="img-box"><img src="/images/ourproduct1.png" alt="Home 2" /></div>
-    </div>
+      <div className="img-box"><img src="/images/whyus1.png" alt="Why Us" /></div>
+      <div className="img-box"><img src="/images/ourservice1.png" alt="Our Service" /></div>
+      <div className="img-box"><img src="/images/ourproduct1.png" alt="Our Product" /></div>
     </div>
   </section>
 );

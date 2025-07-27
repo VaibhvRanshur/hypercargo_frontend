@@ -186,7 +186,7 @@ If you need it, we’ll find it and deliver it.</p>
         reverse
       />
 
-  s
+  
 
       <ProductCard
         image="/images/Turmericpowder.jpg"

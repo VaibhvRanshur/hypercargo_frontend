@@ -8,17 +8,17 @@ export default function Footer({ setActivePage }) {
     <>
     <footer className="footer">
     <div className="footer-links">
-      <a href="https://wa.me/+917447886846" target="_blank">
+      <a href="https://wa.me/+917447886846"target="_blank">
       <img src="/images/whatsapp-icon.png" alt="WhatsApp" className='footer-img'/></a>
       <a href="mailto:hypercargooverseas@gmail.com" target="_blank">
       <img src="/images/mail-icon.png" alt="Email" className='footer-img'/></a>
-      <a href="https://www.facebook.com/yourusername" target="_blank">
+      <a href="https://www.facebook.com/profile.php?id=61578708361404"target="_blank">
       <img src="/images/facebook-icon.png" alt="Facebook" className='footer-img'/></a>
-      <a href="https://x.com/yourusername" target="_blank">
+      <a href="https://x.com/HyperC_overseas?t=knmy-4K4vUZhezhfDlUfrw&s=08"target="_blank">
       <img src="/images/x.png" alt="X" className='footer-img'/></a> 
-      <a href="https://www.instagram.com/akashbhalerao" target="_blank">
+      <a href="https://www.instagram.com/hypercargooverseas?igsh=MXVraWFtYXQ0Zm01MQ=="target="_blank">
       <img src="/images/instagram-icon.png" alt="instagram" className='footer-img'/></a>
-      <a href="https://www.linkedin.com/in/your-username" target="_blank">
+      <a href="https://www.linkedin.com/in/hypercargo-overseas-032171376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"target="_blank">
       <img src="/images/linkedin-icon.png" alt="linkedin" className='footer-img'/></a>
     </div>
     {/* <div className='foot-nav'>
@@ -40,10 +40,13 @@ export default function Footer({ setActivePage }) {
      
      <div className='footer-contact'>
        <h2>Contacts Info</h2>
-       <p><span className='footer-sym'>📞</span>+91 7447886846</p>
-       <p><span className='footer-sym'>📞</span>+91 7887445772</p>
+       <p className='footer-para'><span className=' '>📞</span>+91 7447886846</p>
+       <p className='footer-para' ><span className='footer-sym'>📞</span>+91 7887445772</p>
+        <div className='footer-mail'>
        <p><span className='footer-sym'>✉︎</span> hypercargooverseas@gmail.com</p>
      </div>
+     </div>
+    
     </div>
      <p class="footer-copyright">© 2025 HyperCargo Overseas. All rights reserved</p>
 

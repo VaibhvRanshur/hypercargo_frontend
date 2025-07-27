@@ -23,7 +23,10 @@ main {
   align-items: center;
   justify-content: center;
   background-color: #fff;
+   padding-top: 0 ;
+  margin-top: 0 ;
 }
+
 
 .header {
   position: sticky;
@@ -71,6 +74,32 @@ main {
    Home Page Sections
 ============================= */
 
+ /* .page {
+  margin-top: 0;
+  padding-top: 0;
+} 
+.header {
+  margin-bottom: 0;
+}
+
+.page {
+  padding-top: 0 !important;
+} 
+
+/* .page h1, .page p {
+  margin-top: 0;
+} */
+
+/* .page, .page *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+main, .page, .header {
+  border: 1px solid red; /* For debugging 
+} */
+
+
 .background-img-text0 {
   font-weight: bold;
   font-size: 2rem;
@@ -78,6 +107,7 @@ main {
   text-align: center;
   margin-bottom: 0.2rem; 
   line-height: 1.1;
+  margin-top: 0;
 }
 
 .background-img-text1 {
@@ -101,17 +131,17 @@ main {
 }
 
 .company-intro-head {
-  padding: 1rem;
-  margin: 2rem;
+  padding: 0.5rem;
+  margin: 1rem;
   text-align: center;
   color:  #3b92ce;
   font-size:1.5rem;
 }
 
-.company-intro-subhead {
-  /* font-size: 1rem; */
+.company-intro-subhead{
+  font-size: 1rem;
   white-space: pre-wrap;
-  font-size:1;
+  font-size: 4.2rem;
   color:#0d4373;
 }
 
@@ -143,6 +173,8 @@ main {
   background-color: #eef3f5;
   padding: 1rem 2rem;
   color: #e24141;
+  display: flex;
+  flex-direction:column;
 }
 
 .foot-content {
@@ -216,7 +248,7 @@ main {
   color:#0d4373;
   margin-top: 4rem;
   max-width: 1000px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   white-space: pre-wrap;
 
 }
@@ -285,7 +317,7 @@ main {
 }
 
 .section-title {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #1e88e6;
   border-bottom: 2px solid #003366;
@@ -293,13 +325,13 @@ main {
   padding-bottom: 0.25rem;
 }
 
-.vision-paragraph {
+.paragraph {
   white-space: pre-wrap;
-  font-size: x-large;
+  font-size: 1.2rem;
   color: #003366;
   max-width: 800px;
-  margin: auto;
-  text-align: left;
+  margin: 1rem;
+  text-align:left;
 }
 
 .about-list {
@@ -321,17 +353,18 @@ main {
 ============================= */
 
 .contact-head {
-  font-size: 2rem;
+  font-size:1.5rem;
   color: #1e88e6;
   margin-bottom: 0.5rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
 .page p{
   color:#0d4373;
   text-align: center;
-  margin: 2rem;
-  font-size:1.5rem;
+  margin:1rem;
+  font-size:1.2rem;
 }
 
 .contact-form {
@@ -395,11 +428,39 @@ main {
   .header {
     flex-direction: column;
     align-items: center;
+    margin: 0%;
   }
 
-  nav ul {
+  .logo{                              /**/
+    height: 3rem;
+  }
+
+  .tabs{
+    margin-top: 0.5rem;
+  }
+
+  /* nav ul {
     flex-direction: column;
     gap: 0.5rem;
+  } */
+
+ 
+
+  .company-intro-head{                /**/
+    font-size: 1.5rem;
+    /* margin-top: 1rem; */
+  }
+
+  .company-intro-subhead {
+    margin-top:  1rem !important;
+     font-size:1rem !important;
+    /* line-height: 1.5rem; */
+  }
+
+ 
+  .page-img {                        /**/
+  width: 100%;         
+  margin: 0 auto;      
   }
 
   .background-img-text0 {
@@ -410,16 +471,45 @@ main {
     font-size: 1.3rem;
   }
 
-  .footer-logo {
-    height: 2.2rem;
+  .section-title{
+    font-size: 1.5rem;
+  }
+
+  .paragraph{
+    font-size: 1rem;
+  }
+
+   .contact-icons .contact-img {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+
+  
+  
+  .foot-address{              /**/
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+   .footer-logo {        /**/
+    display: none;
   }
 
   .foot-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .footer-contact{
+    margin-top: 1.5rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .product-card {
+   .product-card {
     flex-direction: column;
     text-align: center;
   }
@@ -445,6 +535,7 @@ main {
   .background-img-text1 {
     font-size: 1rem;
   }
+  
 
   .footer-logo {
     height: 1.8rem;
