@@ -36,15 +36,13 @@ app.post("/api/contact", async (req, res) => {
   const { name, email, contact, message } = req.body;
 
   if (
-    validator.isEmpty(name || "") ||
-    validator.isEmpty(email || "") ||
-    validator.isEmpty(contact || "") ||
-    validator.isEmpty(message || "") ||
-    !validator.isEmail(email) ||
-    !validator.isMobilePhone(contact, "en-IN")
-  ) {
-    return res.status(400).json({ message: "Invalid input." });
-  }
+  !name || validator.isEmpty(name) ||
+  !email || !validator.isEmail(email) ||
+  !contact || !validator.isMobilePhone(contact, "en-IN") ||
+  !message || validator.isEmpty(message)
+) {
+  return res.status(400).json({ message: "Invalid input." });
+}
 
   try {
     const transporter = nodemailer.createTransport({
