@@ -123,6 +123,7 @@ const Products = () => {
   return (
     <div>
       <div>
+        <h2 className='product-head'>Note :</h2>
        <p className='products-Sub-heading'> We Can Source Any Product You Need
 At HyperCargo Overseas, we believe in putting your needs first. No matter what product you're looking for — big or small, common or rare — we’ll make it happen.
 If you need it, we’ll find it and deliver it.</p>
@@ -176,8 +177,10 @@ If you need it, we’ll find it and deliver it.</p>
         title="Red Chilly ( Dry / Powder )"
         origin="Origin:"
         originDescription="Guntur & Byadgi"
-        form="Varieties:"
-        formDescription="Sannam S4, Teja, Byadgi"
+        form="form:"
+        formDescription="Dry/Powder"
+        verities="Varieties:"
+        vertiesDescription="Sannam S4, Teja, Byadgi"
         highlights="Highlights:"
         highlightsPoint1='• Deep red color, fiery heat, sun-dried purity'
         highlightsPoint2= '• Sorted and graded as per global standards'

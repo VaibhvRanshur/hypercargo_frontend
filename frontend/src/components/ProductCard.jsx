@@ -9,7 +9,7 @@
 // }
 import React from 'react';
 
-const ProductCard = ({ image, title, origin, originDescription, form, formDescription,highlight, highlights,highlightsPoint1,highlightsPoint2,highlightsPoint3, highlightsPoint4,reverse }) => (
+const ProductCard = ({ image, title, origin, originDescription, form, verities, vertiesDescription, formDescription,highlight, highlights,highlightsPoint1,highlightsPoint2,highlightsPoint3, highlightsPoint4,reverse }) => (
   <div className={`product-card${reverse ? ' reverse' : ''}`}>
     <img src={image} alt={title} />
       <div className="product-info">
@@ -20,6 +20,9 @@ const ProductCard = ({ image, title, origin, originDescription, form, formDescri
         <p>{originDescription}</p>
         <h4 className='product-d-headings'>{form}</h4>
         <p>{formDescription}</p>
+        <h4 className='product-d-headings'>{verities}</h4>
+        <p>{vertiesDescription}</p>
+        
         <h4 className='product-d-headings'>{highlights}</h4>
         <p>{highlightsPoint1}</p>
         <p>{highlightsPoint2}</p>

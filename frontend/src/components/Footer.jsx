@@ -40,15 +40,29 @@ export default function Footer({ setActivePage }) {
      
      <div className='footer-contact'>
        <h2>Contacts Info</h2>
-       <p className='footer-para'><span className=' '>📞</span>+91 7447886846</p>
-       <p className='footer-para' ><span className='footer-sym'>📞</span>+91 8263843059</p>
-        <div className='footer-mail'>
-          <p className='footer-para'><span className='footer-sym'>✉︎</span> hypercargooverseas@gmail.com</p>
+        <p>
+    <span>📞</span>
+    <a href="tel:+917447886846" className="footer-link-2">+91 7447886846</a>
+  </p>
+
+  <p>
+    <span>📞</span>
+    <a href="tel:+918263843059" className="footer-link-2">+91 8263843059</a>
+  </p>
+
+  <div className='footer-mail'>
+    <p>
+      <span>✉︎</span>
+      <a href="mailto:hypercargooverseas@gmail.com" className="footer-link-2">
+        hypercargooverseas@gmail.com
+      </a>
+    </p>
         </div>
      </div>
     
     </div>
-     <p class="footer-copyright">© 2025 HyperCargo Overseas. All rights reserved</p>
+     <p class="footer-copyright">© 2025 HyperCargo Overseas.</p>
+     <p className='footer-copyright'>All rights reserved.</p>
 
   </footer></>
 

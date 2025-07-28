@@ -17,9 +17,14 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 
+const allowedOrigins = [
+  "http://localhost:5173",                 // local
+  "https://https://react-project-smoky-eight.vercel.app"     // deployed
+];
+
 // CORS: Allow only your frontend domain
 app.use(cors({
-  origin: "http://localhost:5173",  // use your Vite dev URL or production domain
+  origin: allowedOrigins,  // use your Vite dev URL or production domain
   methods: ["POST"],
   allowedHeaders: ["Content-Type"]
 }));
