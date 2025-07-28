@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 // import React from 'react';
 export default function Footer({ setActivePage }) {
   return (
-    <>
+  
     <footer className="footer">
     <div className="footer-links">
       <a href="https://wa.me/+917447886846"target="_blank">
@@ -64,7 +64,7 @@ export default function Footer({ setActivePage }) {
      <p class="footer-copyright">© 2025 HyperCargo Overseas.</p>
      <p className='footer-copyright'>All rights reserved.</p>
 
-  </footer></>
+  </footer>
 
 );
 }
