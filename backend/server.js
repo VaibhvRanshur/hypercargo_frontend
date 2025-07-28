@@ -17,14 +17,14 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 
-const allowedOrigins = [
-  "http://localhost:5173",                 // local
-  "https://https://react-project-smoky-eight.vercel.app"     // deployed
-];
+
 
 // CORS: Allow only your frontend domain
 app.use(cors({
-  origin: allowedOrigins,  // use your Vite dev URL or production domain
+  origin:  [
+    "http://localhost:5173", // local dev
+    "https://react-project-smoky-eight.vercel.app", // ✅ your Vercel frontend
+  ],
   methods: ["POST"],
   allowedHeaders: ["Content-Type"]
 }));
@@ -33,6 +33,8 @@ app.use(express.json());
 
 // API route must come after express setup
 app.post("/api/contact", async (req, res) => {
+   console.log("Received request from:", req.headers.origin);
+  console.log("Data:", req.body);
   const { name, email, contact, message } = req.body;
 
   if (
