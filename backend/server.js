@@ -23,7 +23,7 @@ app.use(limiter);
 app.use(cors({
   origin:  [
     "http://localhost:5173", // local dev
-    "https://react-project-smoky-eight.vercel.app", // ✅ your Vercel frontend
+    "https://react-project-smoky-eight.vercel.app", // your Vercel frontend
   ],
   methods: ["POST"],
   allowedHeaders: ["Content-Type"]
