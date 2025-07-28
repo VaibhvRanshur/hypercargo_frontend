@@ -41,7 +41,7 @@ app.post("/api/contact", async (req, res) => {
     validator.isEmpty(contact || "") ||
     validator.isEmpty(message || "") ||
     !validator.isEmail(email) ||
-    !validator.isMobilePhone(contact, "any")
+    !validator.isMobilePhone(contact, "en-IN")
   ) {
     return res.status(400).json({ message: "Invalid input." });
   }
