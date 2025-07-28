@@ -33,8 +33,6 @@ app.use(express.json());
 
 // API route must come after express setup
 app.post("/api/contact", async (req, res) => {
-   console.log("Received request from:", req.headers.origin);
-  console.log("Data:", req.body);
   const { name, email, contact, message } = req.body;
 
   if (
