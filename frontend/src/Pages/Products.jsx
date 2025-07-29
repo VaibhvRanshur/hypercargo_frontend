@@ -123,8 +123,7 @@ const Products = () => {
   return (
     <div>
       <div>
-        <h2 className='product-head'>Note :</h2>
-       <p className='products-Sub-heading'> We Can Source Any Product You Need
+       <p className='products-Sub-heading'> <span className='product-subhead-title'>Note :</span> We Can Source Any Product You Need
 At HyperCargo Overseas, we believe in putting your needs first. No matter what product you're looking for — big or small, common or rare — we’ll make it happen.
 If you need it, we’ll find it and deliver it.</p>
       </div>
@@ -174,7 +173,7 @@ If you need it, we’ll find it and deliver it.</p>
 
       <ProductCard
         image="/images/chillypowder1.jpg"
-        title="Red Chilly ( Dry / Powder )"
+        title="Red Chilly"
         origin="Origin:"
         originDescription="Guntur & Byadgi"
         form="form:"
@@ -193,7 +192,7 @@ If you need it, we’ll find it and deliver it.</p>
 
       <ProductCard
         image="/images/Turmericpowder.jpg"
-        title="Turmeric Powder:"
+        title="Turmeric Powder"
         origin="Origin:"
         originDescription="Erode & Sangli"
         form="Curcumin:"
