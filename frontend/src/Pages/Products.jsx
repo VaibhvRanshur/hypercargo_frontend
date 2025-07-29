@@ -173,7 +173,7 @@ If you need it, we’ll find it and deliver it.</p>
 
       <ProductCard
         image="/images/chillypowder1.jpg"
-        title="Red Chilly"
+        title="Red Chilli"
         origin="Origin:"
         originDescription="Guntur & Byadgi"
         form="form:"
