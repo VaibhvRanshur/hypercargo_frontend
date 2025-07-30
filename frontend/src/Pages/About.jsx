@@ -48,7 +48,7 @@ export default function About() {
       <div className="about-section">
         <h2 className="section-title">Why Us</h2>
         <ul className="paragraph">
-          <li> <strong>Wide Product Rang</strong> – veryday goods to niche items, we export it all.</li>
+          <li> <strong>Wide Product Rang</strong> – From everyday goods to niche items, we export it all.</li>
           <li> <strong>Global Reach</strong> – Seamless shipping to multiple countries with a strong international network.</li>
           <li> <strong>Customized Solutions</strong> – Services tailored to match your business goals and shipping needs.</li>
           <li> <strong>Timely & Secure Deliveries</strong> – On-time, safe, and efficient logistics you can trust.</li>
