@@ -7,7 +7,7 @@ export default function Contact() {
       <p>Reach us anytime through the following channels:</p>
       <div className="contact-links">
        <div className="contact-icons">
-          <a href="https://wa.me/917887445772" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/918263843059" target="_blank" rel="noopener noreferrer">
             <img src="/images/whatsapp-icon.png" alt="WhatsApp" className="contact-img"/>
           </a>  
 
@@ -31,7 +31,7 @@ export default function Contact() {
             <img src="/images/linkedin-icon.png" alt="LinkedIn" className="contact-img"/>
           </a>
 
-          <a href="tel:+917447886846">
+          <a href="tel:+918263843059">
             <img src="/images/call-icon.png" alt="call" className="contact-img"/>
           </a>
         

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductCard = ({ image, title, origin, originDescription, form, verities, vertiesDescription, formDescription,highlight, highlights,highlightsPoint1,highlightsPoint2,highlightsPoint3, highlightsPoint4,reverse }) => (
+const ProductCard = ({ image, title, origin, originDescription,type,typeDescription, form, verities, vertiesDescription, formDescription,highlight, highlights,highlightsPoint1,highlightsPoint2,highlightsPoint3, highlightsPoint4,highlightsPoint5,highlightsPoint6,reverse }) => (
   <div className={`product-card${reverse ? ' reverse' : ''}`}>
     <img src={image} alt={title} />
       <div className="product-info">
@@ -9,6 +9,8 @@ const ProductCard = ({ image, title, origin, originDescription, form, verities, 
            </div>
         <h4 className='product-d-headings'>{origin}</h4>
         <p>{originDescription}</p>
+        <h4 className='product-d-headings'>{type}</h4>
+        <p>{typeDescription}</p>
         <h4 className='product-d-headings'>{form}</h4>
         <p>{formDescription}</p>
         <h4 className='product-d-headings'>{verities}</h4>
@@ -18,8 +20,10 @@ const ProductCard = ({ image, title, origin, originDescription, form, verities, 
         <p>{highlightsPoint1}</p>
         <p>{highlightsPoint2}</p>
         <p>{highlightsPoint3}</p>
-        <h4 className='product-d-headings'>{highlight}</h4>
         <p>{highlightsPoint4}</p>
+        <p>{highlightsPoint5}</p>
+        <h4 className='product-d-headings'>{highlight}</h4>
+        <p>{highlightsPoint6}</p>
         </div>
   </div>
 );

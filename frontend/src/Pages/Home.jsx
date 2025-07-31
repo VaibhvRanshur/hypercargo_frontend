@@ -16,13 +16,13 @@ const Home = () => (
       <div>
         <h1  className='company-intro-head'>Company Introduction</h1>
        </div> 
-      <p className='company-intro-subhead'>
+      <div className='company-intro-subhead'>
          At HyperCargo Overseas, we connect quality with global demand—exporting a wide range 
          of premium products to businesses worldwide. With fast, secure logistics, tailored 
          solutions, and a dedicated team by your side, we simplify international trade.Powered 
          by smart technology and end-to-end support, we make global shipping smooth, reliable, 
          and worry-free.
-      </p>
+      </div>
     </div>
     <div className="page-img">
       <div className="img-box"><img src="/images/whyus1.png" alt="Why Us" /></div>

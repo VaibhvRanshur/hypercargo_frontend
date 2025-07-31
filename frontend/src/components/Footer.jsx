@@ -8,7 +8,7 @@ export default function Footer({ setActivePage }) {
   
     <footer className="footer">
     <div className="footer-links">
-      <a href="https://wa.me/+917447886846"target="_blank">
+      <a href="https://wa.me/+918263843059"target="_blank">
       <img src="/images/whatsapp-icon.png" alt="WhatsApp" className='footer-img'/></a>
       <a href="mailto:hypercargooverseas@gmail.com" target="_blank">
       <img src="/images/mail-icon.png" alt="Email" className='footer-img'/></a>

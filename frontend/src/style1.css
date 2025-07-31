@@ -147,6 +147,7 @@ main, .page, .header {
 
 .company-intro{
   text-align: center;
+  align-items: center;
 }
 
 .company-intro-head {
@@ -155,16 +156,26 @@ main, .page, .header {
   text-align: center;
   color:  #3b92ce;
   font-size:1.5rem;
-}
+} 
 
-.company-intro-subhead{ 
+ /* .company-intro-subhead{ 
   text-align: center;                         /**/
-  /* max-width: 7000px; */
+ /* max-width: 7000px;
   font-size: 1rem;
   white-space: pre-wrap;
   color:#0d4373;
   padding-left: 18rem;
   padding-right: 18rem;
+}  */
+
+.company-intro-subhead {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  white-space: pre-wrap;
+  color: #0d4373;
+  padding: 0.1rem; 
 }
 
 .page-img {
@@ -274,10 +285,10 @@ main, .page, .header {
 
 
 .products-Sub-heading {
-  text-align: center;
+  text-align: center ;
   color:#0d4373;
-  margin-top: 1.5rem;
-  max-width: 1000px;
+  margin-top: 1rem;
+  max-width: 800px !important;
   font-size: 1.2rem;
   white-space: pre-wrap;
 
@@ -335,7 +346,19 @@ main, .page, .header {
     font-weight: bold;
     font-size: 1.3rem;
   }
+  .product-showcase{
+    margin-top: 1.3rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #0d4373;
+  }
 
+ .products-page-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
 /* =============================
    About Page
 ============================= */
@@ -369,20 +392,6 @@ main, .page, .header {
   margin-top:0;
   text-align:left;
 }
-
-/* .about-list {
-  list-style-type: disc;
-  text-align: left;
-  margin: auto;
-  max-width: 800px;
-  padding-left: 1.25rem;
-}
-
-.about-list li {
-  margin-bottom: 0.625rem;
-  font-size: 1rem;
-  color: #003366;
-} */
 
 /* =============================
    Contact Page
